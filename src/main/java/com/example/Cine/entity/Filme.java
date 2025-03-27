@@ -13,12 +13,14 @@ public class Filme {
     private int ano;
     private  String nome;
     private int classificacao;
+    private  String url;
 
     public Filme(int ano, String nome,int classificacao,Integer id){
        this.ano = ano;
        this.nome = nome;
        this.classificacao = classificacao;
        this.id = id;
+       this.url = url;
     }
     public Filme(){
 
@@ -56,6 +58,10 @@ public class Filme {
         this.id = id;
     }
 
+    public String getUrl() { return url; }
+
+    public void setUrl(String url) {this.url = url;}
+
     @Override
     public String toString() {
         return "Filme{" +
@@ -63,6 +69,7 @@ public class Filme {
                 ", ano=" + ano +
                 ", nome='" + nome + '\'' +
                 ", classificacao=" + classificacao +
+                ", url='" + url + '\'' +
                 '}';
     }
 }
